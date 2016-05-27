@@ -3,6 +3,8 @@ defmodule Issues.Mixfile do
 
   def project do
     [app: :issues,
+     version: "0.0.1",
+     source_url: "https://github.com/dave-filion/issues",
      escript: escript_config,
      version: "0.0.1",
      elixir: "~> 1.2",
@@ -30,7 +32,9 @@ defmodule Issues.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.8.0"},
-      {:poison, "~> 2.0"}
+      {:poison, "~> 2.0"},
+      {:ex_doc, "~> 0.11"},
+      {:earmark, ">= 0.0.0"}
     ]
   end
 
